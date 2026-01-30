@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sugandh Sagar – Premium Dhup & Agarbatti</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
+    body { background: #fff7ed; color: #2c1a1a; }
+    header { background: linear-gradient(135deg, #5a1f1f, #a8442a); padding: 20px; color: #fff; }
+    .logo { display: flex; align-items: center; gap: 12px; }
+    .logo span { font-size: 2rem; }
+    header h1 { font-size: 1.8rem; }
+    nav { margin-top: 10px; }
+    nav a { color: #fff; margin-right: 15px; text-decoration: none; font-weight: 500; }
+    .hero { padding: 60px 20px; text-align: center; background: radial-gradient(circle, #fff1e6, #ffe4c7); }
+    .hero h2 { font-size: 2.2rem; margin-bottom: 10px; }
+    .hero p { max-width: 600px; margin: auto; font-size: 1.1rem; }
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 25px; padding: 40px 20px; }
+    .card { background: #ffffff; border-radius: 18px; padding: 20px; box-shadow: 0 12px 28px rgba(0,0,0,0.1); transition: transform 0.3s; text-align: center; }
+    .card:hover { transform: translateY(-8px); }
+    .card img { width: 100%; height: 160px; object-fit: cover; border-radius: 12px; margin-bottom: 12px; }
+    .price { font-weight: 600; color: #a8442a; margin-top: 6px; }
+    .about, .contact { padding: 40px 20px; max-width: 900px; margin: auto; }
+    .contact-box { background: #fff; padding: 25px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
+    footer { background: #2c1a1a; color: #fff; text-align: center; padding: 15px; }
+
+    /* Chatbot */
+    .chatbot { position: fixed; bottom: 20px; right: 20px; width: 300px; background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); overflow: hidden; display: none; }
+    .chatbot-header { background: #a8442a; color: #fff; padding: 10px; font-weight: 600; }
+    .chatbot-body { padding: 10px; height: 200px; overflow-y: auto; font-size: 0.9rem; }
+    .chatbot-input { display: flex; border-top: 1px solid #ddd; }
+    .chatbot-input input { flex: 1; border: none; padding: 10px; }
+    .chatbot-input button { border: none; background: #a8442a; color: #fff; padding: 10px 15px; cursor: pointer; }
+    .chat-toggle { position: fixed; bottom: 20px; right: 20px; background: #a8442a; color: #fff; border-radius: 50%; width: 56px; height: 56px; display: flex; align-items: center; justify-content: center; font-size: 24px; cursor: pointer; box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.4rem; }
+      .hero h2 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <span>🕉️</span>
+      <div>
+        <h1>Sugandh Sagar</h1>
+        <p>Premium Dhup & Agarbatti</p>
+      </div>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Pure Fragrance for Every Prayer</h2>
+    <p>Handcrafted dhup & agarbatti made with natural ingredients to bring peace, devotion, and positivity.</p>
+  </section>
+
+  <section class="products" id="products">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1609334764501-9384c17d4b8c" alt="Agarbatti">
+      <h3>Herbal Agarbatti</h3>
+      <p>Long-lasting soothing fragrance.</p>
+      <div class="price">₹120 / pack</div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1617196034738-26c8c1e4d8f1" alt="Dhup">
+      <h3>Premium Dhup Sticks</h3>
+      <p>Smokeless and calming aroma.</p>
+      <div class="price">₹180 / pack</div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f48" alt="Sambrani">
+      <h3>Sambrani Cups</h3>
+      <p>Traditional sambrani for positivity.</p>
+      <div class="price">₹150 / box</div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>Sugandh Sagar is a homegrown Indian brand offering authentic dhup and agarbatti crafted with devotion, purity, and traditional methods.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Details</h2>
+    <div class="contact-box">
+      <p><strong>Owner:</strong> Sagar</p>
+      <p><strong>📞 Phone:</strong> +91 93735 18013</p>
+      <p><strong>📧 Email:</strong> sagardhup@gmail.com</p>
+      <p><strong>📍 Address:</strong> Pune, Maharashtra, India</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Sugandh Sagar. All rights reserved.</p>
+  </footer>
+
+  <!-- Chatbot -->
+  <div class="chat-toggle" onclick="toggleChat()">💬</div>
+  <div class="chatbot" id="chatbot">
+    <div class="chatbot-header" style="display:flex; justify-content:space-between; align-items:center;">Sugandh Assistant <span style="cursor:pointer; font-size:18px;" onclick="toggleChat()">✖</span></div>
+    <div class="chatbot-body" id="chatBody">
+      <p><strong>Bot:</strong> Namaste 🙏 How can I help you today?</p>
+    </div>
+    <div class="chatbot-input">
+      <input type="text" id="userInput" placeholder="Type your message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script>
+    function toggleChat() {
+      const bot = document.getElementById('chatbot');
+      bot.style.display = bot.style.display === 'none' ? 'block' : 'none';
+    }
+    function sendMessage() {
+      const input = document.getElementById('userInput');
+      const body = document.getElementById('chatBody');
+      if (!input.value) return;
+      body.innerHTML += `<p><strong>You:</strong> ${input.value}</p>`;
+      body.innerHTML += `<p><strong>Bot:</strong> Thank you 🙏 Please call us or WhatsApp for orders.</p>`;
+      input.value = '';
+      body.scrollTop = body.scrollHeight;
+    }
+  </script>
+</body>
+</html>
